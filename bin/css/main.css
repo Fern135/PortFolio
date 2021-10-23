@@ -1,0 +1,22 @@
+/* size of the logo */
+.logo-main-me {
+    width: 60%;
+    height: auto;
+}
+
+/* align to the center of the screen */
+.center {
+    text-align: center;
+}
+
+/* the console to show the resposne to certain algorithms */
+#console {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    border-radius: 7px;
+    padding: 3px;
+    text-align: center;
+}
