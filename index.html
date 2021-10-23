@@ -23,18 +23,17 @@
             <!-- Latest compiled JavaScript -->
             <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-            <region>
-            </region>
-
         </region>
     </head>
 
     <body>
 
-        <br>
+        <div class="container">
+            <br>
+        </div>
 
         <div class="row">
-            <div class="col-sm">
+            <div class="col col-sm col-md">
                 <div class="container center">
                     <img class="img-fluid rounded logo-main-me center" id="logo-main-me"
                         src="./bin/assets/porfolio 3.jpeg" alt="ME :-)">
@@ -48,33 +47,93 @@
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col col-sm col-md">
 
                 <div class="row">
                     <!-- fizzbuzz -->
-                    <div class="col-sm">
+                    <div class="col col-sm col-md">
                         <button class="btn btn-outline-primary" onclick="fizzbuzz()">FizzBuzz</button>
                     </div>
                     <!-- fizzbuzz -->
-
-                </div>
-
-                <!-- console showing the data from said algorithm -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <span id="console"></span>
-                        </div>
+                    
+                    <!-- dnd -->
+                    <div class="col col-sm col-md">
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#dnd-dice-roller">
+                            Open modal
+                        </button>
                     </div>
+                    <!-- dnd -->
+                    
                 </div>
-                <!-- console showing the data from said algorithm -->
+
             </div>
         </div>
+
+        <region>
+            <!-- The Modal -->
+            <div class="modal fade" id="dnd-dice-roller">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col col-sm col-md">
+                                    <button>D20</button>
+                                </div>
+
+                                <div class="col col-sm col-md">
+                                    <button>D12</button>
+                                </div>
+
+                                <div class="col col-sm col-md">
+                                    <button>D10</button>
+                                </div>
+
+                                <div class="col col-sm col-md">
+                                    <button>D8</button>
+                                </div>
+                                
+                                <div class="col col-sm col-md">
+                                    <button>D6</button>
+                                </div>
+                                
+                                <div class="col col-sm col-md">
+                                    <button>D6</button>
+                                </div>
+
+                                <div class="col col-sm col-md">
+                                    
+                                </div>
+                            </div>
+                            
+                            <script>
+                                
+                            </script>
+                        </div>
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </region>
 
         <noscript>Your browser does not support JavaScript. Please enable JavaScript</noscript>
 
         <region>
             <script async src="./bin/js/main.js"></script>
+            <script async src="./bin/js/dnd.js"></script>
 
             <script async src="https://smtpjs.com/v3/smtp.js"></script>
 

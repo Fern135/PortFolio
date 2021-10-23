@@ -27,12 +27,8 @@ class Ajax {
                 "Content-type": "application/json; charset=UTF-8"
             }
         })
-
-            // Converting to JSON
-            .then(response => response.json())
-
-            // Displaying results to console
-            .then(json => console.log(json));
+        .then(response => response.json())// Converting to JSON
+        .then(json => console.log(json));// Displaying results to console
     }
 
     //#endregion

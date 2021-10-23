@@ -2,7 +2,6 @@ document.onload = Load();
 
 // once the page loads
 async function Load() {
-    setLSTR("Date", getfulldate());
     try {
         Promise.all(
             [
@@ -17,6 +16,7 @@ async function Load() {
 // the fizz buzz algorithm problem
 function fizzbuzz() {
     try {
+        alert('Check the console of the browser');
         var FIZZBUZZ = "FizzBuzz\nPrint out the numbers from 1 to 100.\nbut if the number is a multiple of 3 print out (Fizz)\n" +
             "If it's a multiple of 5 print out (Buzz)\nif it's a multiple of 3 and 5 print out (FizzBuzz).\nEvery other print out the number";
         console.log(`${FIZZBUZZ}`);
