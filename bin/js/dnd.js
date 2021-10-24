@@ -1,5 +1,4 @@
-class DiceRoller{
-
+export default class DiceRoller{
     /*
         dice types { 
             d20,
@@ -35,32 +34,32 @@ class DiceRoller{
     roll(){
         switch (this.dice_type){
             case 'd20':
-                this.rnd(1,20);
+                return this.rnd(1,20);
                 break;
 
             case 'd12':
-                this.rnd(1,12);
+                return this.rnd(1,12);
                 break;
 
             case 'd10':
-                this.rnd(1,10);
+                return this.rnd(1,10);
                 break;
 
             case 'd8':
-                this.rnd(1,8);
+                return this.rnd(1,8);
                 break;
 
             case 'd6':
-                this.rnd(1,6);
+                return this.rnd(1,6);
                 break;
 
             case 'd4':
-                this.rnd(1,4);
+                return this.rnd(1,4);
                 break;
 
             case 'Percentage':
             case 'percentage':
-                this.rnd(10,100);
+                return this.rnd(10,100);
                 break;
         }
     }

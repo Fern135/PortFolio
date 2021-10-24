@@ -1,6 +1,6 @@
 /* size of the logo */
 .logo-main-me {
-    width: 60%;
+    width: 50%;
     height: auto;
 }
 
@@ -20,3 +20,34 @@
     padding: 3px;
     text-align: center;
 }
+
+.border:hover {
+    background-color: black;
+    color: white;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    color: black;
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.2s ease-out; */
+  }
