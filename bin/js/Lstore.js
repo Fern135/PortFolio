@@ -5,8 +5,6 @@ class LStore {
         this.data = data;
     }
 
-    constructor(){}
-
     setXPDay(expires) {
         this.expires = expires;
     }

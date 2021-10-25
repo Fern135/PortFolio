@@ -1,4 +1,4 @@
-const dnd = require('dnd.js');
+// const dnd = require('dnd.js');
 
 window.onload = Load();
 
@@ -65,6 +65,22 @@ function fizzbuzz() {
         }
     } catch (error) {
         console.log(error.toString());
+    }
+}
+
+// draw a pyramid
+function triangel(n, pattern){
+    var k = n - 1;
+
+    for(var i = 0; i <= n;i++){
+        for(var j = 0; j <= k;j++){
+            console.log("")
+        }
+
+        k -= 1;
+        for(var j = 0; j <= i + 1;j++){
+            console.log(`${pattern}`);
+        }
     }
 }
 
