@@ -84,12 +84,6 @@ function triangel(n, pattern){
     }
 }
 
-// getting today's full date
-function getfulldate() {
-    const d = new Date();
-    const months = ["Jan", "Feb", "Mar", "Ap", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-    return `C: ${months[d.getMonth()]}/${d.getDate()}/${d.getFullYear()} > `;
-}
 
 // detecting os. so the broser console can open correctly
 function detectOS() {
