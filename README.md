@@ -1,1 +1,1 @@
-https://fern135.github.io/PortFolio/cv.html
+https://fern135.github.io/PortFolio/index.html
