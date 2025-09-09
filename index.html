@@ -107,9 +107,23 @@
           width: 50%;
           height: auto;
         }
+
+      .text-contrast {
+        color: white; /* or your preferred text color */
+        text-shadow: 
+          -1px  -1px 1px rgba(0,0,0,0.8), /* top-left */
+          1px   -1px 1px rgba(0,0,0,0.8), /* top-right */
+          -1px  1px  1px rgba(0,0,0,0.8), /* bottom-left */
+          1px   1px  1px rgba(0,0,0,0.8); /* bottom-right */
+      }
+
+      .bg-gray {
+        background-color: rgba(175, 175, 175, 0.462);
+      }
+
     </style>
 </head>
-<body>
+<body class="bg-gray">
     <header class="hero shadow">
         <h1>Hi, I'm Fernando Camblor</h1>
         <p>Welcome to my software engineering portfolio!</p>
@@ -133,7 +147,7 @@
         </div>
     </section>
 
-    <section class="skills py-5 bg-secondary text-light shadow">
+    <section class="skills py-5 bg-secondary text-light shadow text-contrast">
         <div class="container">
             <h2 class="text-center mb-4">Skills</h2>
 
@@ -238,6 +252,7 @@
 
         <div class="row">
 
+          <!-- scarpaPHP -->
           <div class="col col-sm col-md">
               <div class="card shadow">
                   <img class="img-fluid rounded card-img-top" src="./bin/assets/scarpaPHP.png" alt="ScarpaPHP">
@@ -250,6 +265,7 @@
               </div>
           </div>
 
+          <!-- generate fake data -->
           <div class="col col-sm col-md">
               <div class="card shadow">
                   <img class="img-fluid rounded card-img-top" src="./bin/assets/gen_fake_Data.png" alt="Generate Fake Data">
@@ -257,6 +273,19 @@
                       <h5 class="card-title">Generate Fake Data </h5>
                       <p class="card-text">REST API for generating fake data <br>
                         <a href="https://github.com/Fern135/GenFakeData" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-1"></i></a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- G.E.S.A. -->
+            <div class="col col-sm col-md">
+              <div class="card shadow">
+                  <img class="img-fluid rounded card-img-top" src="./bin/assets/GESA_LOGO.png" alt="Generate Fake Data">
+                  <div class="card-body">
+                      <h5 class="card-title">G.E.S.A. (Generate Express Secure Api)</h5>
+                      <p class="card-text">Cli tool to scaffold node.js express api.<br>
+                        <a href="https://github.com/Fern135/G.E.S.A." target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-1"></i></a>
                       </p>
                   </div>
               </div>
