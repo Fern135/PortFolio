@@ -3,246 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Fernando Camblor</title>
+    <meta name="description" content="Fernando Camblor — Software engineer specialising in backend development, REST APIs, and developer tooling.">
+    <meta property="og:title" content="Fernando Camblor — Software Engineer">
+    <meta property="og:description" content="Software engineer specialising in backend development, REST APIs, and developer tooling.">
+    <meta property="og:type" content="website">
+    <title>Fernando Camblor — Software Engineer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./bin/assets/hero-v2.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 150px 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        .hero a {
-            margin-top: 20px;
-            animation: fadeIn 2.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .about-me img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .about-me  {
-          margin-top:     5em;
-          margin-bottom:  5em;
-          /* margin-left:    5em; */
-          /* margin-right:   5em; */
-        }
-
-        .skills .progress {
-            height: 25px;
-        }
-
-        .contact-info li {
-            margin: 10px 0;
-        }
-
-        #img-me-main {
-            max-width: 100%;
-            width: 40%;
-            height: auto;
-        }
-
-        #img-me-main:hover {
-          transform: scale(1.50);
-          transition: transform 0.5s ease-in-out;
-        }
-
-        .card {
-            transition: transform 0.3s ease-in-out;
-
-            width: 100%;
-            height: auto;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .skills-progress-bar { 
-          transition: transform 0.3s ease-in-out;
-        }
-
-        .skills-progress-bar:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #f8f9fa;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .project-imgs {
-          width: 50%;
-          height: auto;
-        }
-
-      .text-contrast {
-        color: white; /* or your preferred text color */
-        text-shadow: 
-          -1px  -1px 1px rgba(0,0,0,0.8), /* top-left */
-          1px   -1px 1px rgba(0,0,0,0.8), /* top-right */
-          -1px  1px  1px rgba(0,0,0,0.8), /* bottom-left */
-          1px   1px  1px rgba(0,0,0,0.8); /* bottom-right */
-      }
-
-      .bg-gray {
-        background-color: rgba(175, 175, 175, 0.462);
-      }
-
-    </style>
+    <link rel="stylesheet" href="./bin/css/main.css">
+    <link rel="icon" type="image/x-icon" href="./bin/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./bin/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./bin/assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="./bin/assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./bin/assets/favicon/site.webmanifest">
 </head>
-<body class="bg-gray">
-    <header class="hero shadow">
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fernando Camblor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
         <h1>Hi, I'm Fernando Camblor</h1>
-        <p>Welcome to my software engineering portfolio!</p>
-        <a href="./bin/v_2/assets/Fernando_Camblor_resume.pdf" class="btn btn-primary btn-lg" download>Download My Resume <i class="fas fa-download"></i></a>
+        <p class="hero-subtitle">Software Engineer &mdash; backend development, REST APIs, and developer tooling.</p>
+        <div class="hero-actions">
+            <a href="./bin/assets/Fernando_Camblor_resume.pdf" class="btn btn-primary px-4 py-2" download>
+                <i class="fas fa-download me-2"></i>Resume
+            </a>
+            <a href="#contact" class="btn btn-outline-light px-4 py-2">Get in touch</a>
+        </div>
     </header>
 
-    <section class="about-me py-5 shadow">
-        <div class="container text-center">
-            <div class="row mb-4">
-              <div class="col-12 col-md col-sm-12">
-                <h2 class="mb-4">About Me</h2>
-                <p class="lead">I am a passionate software engineer with expertise in building web applications, solving complex problems, and creating efficient solutions.</p>
-              </div>
-              
-              <div class="col-12 col-md col-sm-12">
-                <img class="img-fluid rounded" id="img-me-main" src="./bin/assets/portfolio-headshot.jpeg" alt="Fernando Camblor">
-              </div>
-
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="skills py-5 bg-secondary text-light shadow text-contrast">
+    <!-- About -->
+    <section id="about" class="about-me">
         <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-
-            <div class="row">
-
-              <div class="col col-sm col-md">
-                <ul>
-                  <li>
-                    <h4>Programming Languages</h4>
-                    <ul>
-                      <li>Python</li>
-                      <li>JavaScript</li>
-                      <li>Golang</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col col-sm col-md">
-                <ul>
-                  <li>
-                    <h4>Frameworks</h4>
-                    <ul>
-                      <li>Django</li>
-                      <li>Flask</li>
-                      <li>FastAPI</li>
-                      <li>React</li>
-                      <li>Express.js</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              
-
-              <div class="col col-sm col-md">
-                <ul>
-                  <li>
-                    <h4>DataBase</h4>
-                    <ul>
-                      <li>MongoDB</li>
-                      <li>MySQL</li>
-                      <li>PostgreSQL</li>
-                      <li>SQLite</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col col-sm col-md">
-                <ul>
-                  <li>
-                    <h4>Other</h4>
-                    <ul>
-                      <li>Git</li>
-                      <li>GitHub</li>
-                      <li>Linux</li>
-                      <li>Windows</li>
-                      <li>MacOS</li>
-                      <!-- <li>CI/CD</li> -->
-                      <li>Docker</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-divider"></div>
             </div>
-
-            <!-- <div class="skills-progress-bar mb-3">
-              <label for="skill1" class="form-label">Python (Django)</label>
-              <div class="progress">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-              </div>
-            </div>
-
-            <div class="skills-progress-bar mb-3">
-                <label for="skill1" class="form-label">HTML (React), CSS</label>
-                <div class="progress">
-                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-12 col-md-auto text-center">
+                    <img id="img-me-main" src="./bin/assets/portfolio-headshot.jpeg" alt="Fernando Camblor">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="about-text">
+                        I am a passionate software engineer with a focus on building reliable backend systems, REST APIs, and tools that improve developer productivity and address real business needs. I enjoy working across the stack — from designing clean API contracts to shipping CLI utilities that make everyday workflows faster and teams more effective.
+                    </p>
                 </div>
             </div>
-
-            <div class="skills-progress-bar mb-3">
-                <label for="skill3" class="form-label">JavaScript</label>
-                <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-            </div>
-
-            <div class="skills-progress-bar mb-3">
-                <label for="skill4" class="form-label">Bootstrap</label>
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
-            </div> -->
-
         </div>
     </section>
 
@@ -252,7 +75,7 @@
 
         <div class="row">
 
-          <!-- scarpaPHP 
+          <!-- scarpaPHP -->
           <div class="col col-sm col-md col-lg-4 mx-auto">
               <div class="card shadow">
                   <img class="img-fluid rounded card-img-top" src="./bin/assets/scarpaPHP.png" alt="ScarpaPHP">
@@ -263,7 +86,7 @@
                       </p>
                   </div>
               </div>
-          </div> -->
+          </div>
 
           <!-- generate fake data -->
           <div class="col col-sm col-md col-lg-4 mx-auto">
@@ -285,21 +108,20 @@
         
         <div class="row">
           
-          <!-- G.E.S.A. 
+          <!-- G.E.S.A. -->
             <div class="col col-sm col-md col-lg-4 mx-auto">
               <div class="card shadow">
                   <img class="img-fluid rounded card-img-top" src="./bin/assets/GESA_LOGO.png" alt="Generate Fake Data">
                   <div class="card-body">
-                      <h5 class="card-title">G.E.S.A.</h5>
-                      <p class="card-text">Cli tool to scaffold node.js express api.
-                          <br>
+                      <h5 class="card-title">G.E.S.A. (Generate Express Secure Api)</h5>
+                      <p class="card-text">Cli tool to scaffold node.js express api.<br>
                         <a href="https://github.com/Fern135/G.E.S.A." target="_blank" rel="noopener noreferrer"><i class="fab fa-github fs-1"></i></a>
                       </p>
                   </div>
               </div>
-          </div> -->
+          </div>
           
-          <!-- FasGen 
+          <!-- FasGen -->
           <div class="col col-sm col-md col-lg-4 mx-auto">
             <div class="card shadow">
                 <img class="img-fluid rounded card-img-top" src="./bin/assets/FasGen.png" alt="Generate Fake Data">
@@ -310,9 +132,9 @@
                       </p>
                   </div>
               </div>
-          </div> -->
+          </div>
 
-          <!-- jsbg 
+          <!-- jsbg -->
           <div class="col col-sm col-md col-lg-4 mx-auto">
             <div class="card shadow">
                 <img class="img-fluid rounded card-img-top" src="./bin/assets/jsbg.png" alt="Generate Fake Data">
@@ -324,60 +146,64 @@
                   </div>
               </div>
           </div>
-            -->
 
+            </div>
         </div>
-
-      </div>
     </section>
 
-    <hr>
-
-    <section class="contact py-5 bg-light mb-5">
+    <!-- Projects -->
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Information</h2>
+            <div class="section-header">
+                <h2>Projects</h2>
+                <div class="section-divider"></div>
+            </div>
 
-            <div class="row mb-3 mt-3">
-              <div class="col col-sm col-md border mb-3 mt-3">
-
-                <div class="card shadow mt-3 mb-3 ml-5 mr-5">
-                  <!-- <img class="img-fluid rounded fs-6 card-img-top" src="./bin/assets/note_taker.png" alt="Note Taker"> -->
-                  <div class="card-body">
-                      <!-- <h5 class="card-title">Note Taker</h5> -->
-                      <div class="card-text">
-                        <div class="list-unstyled contact-info text-center">
-                          <a href="mailto:dante.camblor@gmail.com"><i class="fas fa-envelope fs-1"></i></a>
-                        </div>                        
-                      </div>
-                  </div>
+            <div class="project-card">
+                <img class="project-card-img" src="./bin/assets/gen_fake_Data.png" alt="Generate Fake Data">
+                <div class="project-card-body">
+                    <h5 class="project-card-title">Generate Fake Data</h5>
+                    <p class="project-card-desc">A REST API for generating realistic fake data on demand — useful for seeding databases, testing pipelines, and prototyping frontend interfaces without relying on production data.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">REST API</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Open Source</span>
+                    </div>
+                    <a href="https://github.com/Fern135/GenFakeData" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
-
-              </div>
-              
-              <div class="col col-sm col-md text-center border mb-3 mt-3">
-
-                <div class="card shadow mt-3 mb-3 ml-5 mr-5">
-                  <!-- <img class="img-fluid rounded fs-6 card-img-top" src="./bin/assets/note_taker.png" alt="Note Taker"> -->
-                  <div class="card-body">
-                      <!-- <h5 class="card-title">Note Taker</h5> -->
-                      <div class="card-text">
-                        <a href="https://www.linkedin.com/in/fernando-camblor-a85a88151/" target="_blank" rel="noopener noreferrer">
-                          <i class="fa-brands fa-linkedin fs-1 "></i>
-                        </a>
-                      </div>
-                  </div>
-                </div>
-                
-              </div>
-              
             </div>
 
         </div>
     </section>
 
-    <!-- <footer>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="mailto:dante.camblor@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    dante.camblor@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/fernando-camblor-a85a88151/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
-    </footer> -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            &copy; 2026 Fernando Camblor
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
