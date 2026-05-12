@@ -178,14 +178,18 @@ body {
     background-color: #ffffff;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
 .project-card {
     border: 1px solid #e2e8f0;
     border-radius: 16px;
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     background: #ffffff;
-    max-width: 640px;
-    margin: 0 auto;
 }
 
 .project-card:hover {
